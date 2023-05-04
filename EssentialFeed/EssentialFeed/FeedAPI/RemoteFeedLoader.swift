@@ -15,7 +15,7 @@ public protocol HTTPClient {
 public final class RemoteFeedLoader {
     private var url: URL
     private var client: HTTPClient
-    public enum Error: Swift.Error {
+    public enum Error: Swift.Esrror {
         case connectivity
     }
     public init(client: HTTPClient, url: URL = URL(string: "https://a-url.com")!) {
